@@ -1,0 +1,14 @@
+@mixin font-face($family, $uname, $style: normal, $weight: 400, $version: 1) {
+	$font_url_prefix: '#{$font-dir}#{$family}/#{$uname}';
+
+	@font-face {
+		font: {
+			family: $family;
+			weight: $weight;
+			style: $style;
+			display: swap;
+		}
+		src: url('#{$font_url_prefix}.woff2?v=#{$version}') format('woff2'),
+			url('#{$font_url_prefix}.woff?v=#{$version}') format('woff');
+	}
+}

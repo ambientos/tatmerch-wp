@@ -1,0 +1,21 @@
+//
+// Image Directory
+//
+
+$img-dir: '../i/';
+
+
+//
+// Fonts Variables
+//
+
+$font-dir:	 '../fonts/';
+
+$font-main:  'Roboto';
+
+$fonts:	(
+	( $font-main, 'light',        normal, 300, 20191102 ),
+	( $font-main, 'light-italic', italic, 300, 20191102 ),
+	( $font-main, 'regular',      normal, 400, 20191102 ),
+	( $font-main, 'medium',       normal, 500, 20191102 ),
+);
