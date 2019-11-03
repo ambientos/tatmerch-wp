@@ -16,7 +16,7 @@
 					'container_class' => false,
 				) ); ?>
 
-				<div class="invite dib"><a href="<?php echo site_url('/invite/') ?>">Пригласить в тендер</a></div>
+				<div class="invite dib"><a href="<?php echo site_url('/contacts/#feedback') ?>">Пригласить в тендер</a></div>
 				<div class="lk dib lk--new">
 					<a href="http://185.137.233.201:8080">Личный кабинет</a>
 					<span class="badge">new</span>
@@ -42,7 +42,7 @@
 					</div>
 
 					<div class="invite">
-						<a href="<?php echo site_url('/invite/') ?>">Пригласить в тендер</a>
+						<a href="<?php echo site_url('/contacts/#feedback') ?>">Пригласить в тендер</a>
 					</div>
 
 					<div class="lk lk--new">
@@ -64,4 +64,14 @@
 		</div>
 	</header>
 
-	<main class="siteMain">
+	<?php
+
+	$main_classes = '';
+
+	if ( function_exists('get_field') ) {
+		$main_classes = ' class="'. get_field('main-classes', get_the_ID()) . '"';
+	}
+
+	?>
+
+	<main<?php echo $main_classes; ?>>

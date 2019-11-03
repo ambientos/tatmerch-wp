@@ -1,0 +1,19 @@
+{
+    "name": "ag/tatm-site",
+    "description": "Special plugin for Tatmerch site",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Anton Grakhov",
+            "email": "ant.grakhov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AG_Tatm_Site\\": "core/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

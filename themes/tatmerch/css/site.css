@@ -211,7 +211,7 @@ body {
   padding: 0 20px;
   padding-bottom: 20px; }
 
-.siteHeader .topMenu ul li.active {
+.siteHeader .topMenu ul li.current-menu-item {
   border-bottom: 4px solid #00922a; }
 
 .ml30 {

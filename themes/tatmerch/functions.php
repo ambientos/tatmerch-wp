@@ -15,7 +15,7 @@ function tatm_setup() {
 	 * Register menus
 	 */
 	register_nav_menus( array(
-		'main_menu' => __( 'Header Menu', 'tatm' ),
+		'main_menu' => __( 'Main Menu', 'tatm' ),
 	) );
 
 	/**
