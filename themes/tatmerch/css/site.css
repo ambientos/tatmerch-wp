@@ -488,17 +488,20 @@ body {
   line-height: 150%;
   width: 75%; }
 
-a.more {
+form input.more {
+  display: inline-block;
+  width: auto;
+  margin-top: 90px;
   color: #fff;
   font-weight: 300;
   padding: 20px 75px 20px 30px;
-  display: inline-block;
+  border-style: none;
   border-radius: 30px;
   font-size: 24px;
-  background: #00922a url("../i/icons/arrow.png") no-repeat 90% center;
-  margin-top: 90px; }
+  cursor: pointer;
+  background: #00922a url("../i/icons/arrow.png") no-repeat 90% center; }
 
-a.more:hover {
+input.more:hover {
   background: #0e9e37 url("../i/icons/arrow.png") no-repeat 90% center; }
 
 footer {
@@ -572,7 +575,7 @@ footer .devBy a {
 main .container {
   padding: 0 10px; }
 
-.contacts form {
+.contacts .form-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,9 +606,12 @@ div.organ_input {
 .contacts .form form {
   margin-top: 120px; }
 
+.form textarea,
+.textarea-wrap {
+  width: 100%; }
+
 .form textarea {
-  width: 100%;
-  /*padding-bottom: 20px;*/
+  height: 100px;
   font-family: "Roboto",sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -1419,7 +1425,7 @@ header .logo a img {
   .offices_territories .right ul li {
     padding: 6px 0;
     padding-left: 44px; }
-  a.more {
+  input.more {
     font-size: 20px; }
   footer nav ul li {
     display: block;

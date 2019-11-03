@@ -439,7 +439,7 @@ div.phone_input, div.organ_input {
   width: 100%;
   padding: 0; }
 
-form > div input {
+.form-inner > div input {
   font-size: 4.5vw;
   padding-left: 15px;
   padding-bottom: 15px;

@@ -452,18 +452,23 @@
 	width: 75%;
 }
 
-a.more {
+form input.more {
+	display: inline-block;
+	width: auto;
+	margin-top: 90px;
 	color: #fff;
 	font-weight: 300;
 	padding: 20px 75px 20px 30px;
-	display: inline-block;
-	border-radius: 30px;
+	border: {
+		style: none;
+		radius: 30px;
+	}
 	font-size: 24px;
+	cursor: pointer;
 	background:#00922a url('#{$img-dir}icons/arrow.png') no-repeat 90% center;
-	margin-top: 90px;
 }
 
-a.more:hover {
+input.more:hover {
 	background:#0e9e37 url('#{$img-dir}icons/arrow.png') no-repeat 90% center;
 }
 
@@ -547,7 +552,7 @@ main .container {
 	padding: 0 10px;
 }
 
-.contacts form {
+.contacts .form-inner {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -575,9 +580,13 @@ div.organ_input {
 	margin-top: 120px;
 }
 
-.form textarea {
+.form textarea,
+.textarea-wrap {
 	width: 100%;
-	/*padding-bottom: 20px;*/
+}
+
+.form textarea {
+	height: 100px;
 	font-family: "Roboto",sans-serif;
 	font-weight: 300;
 	font-size: 18px;
@@ -1623,7 +1632,7 @@ header .logo a img {
 		padding-left: 44px;
 	}
 
-	a.more {
+	input.more {
 		font-size: 20px;
 	}
 
