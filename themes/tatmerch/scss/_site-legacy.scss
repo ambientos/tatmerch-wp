@@ -199,10 +199,15 @@
 	color: #00922a;
 }
 
+.descList-wrap {
+	display: flex;
+	justify-content: center;
+}
+
 .description .descList {
-	display: inline-block;
+	width: 39%;
 	vertical-align: top;
-	margin-right: 130px;
+	margin-right: 11%;
 }
 
 .description .descList li {
@@ -211,8 +216,7 @@
 	font-size: 18px;
 	font-weight: 300;
 	margin-bottom: 45px;
-		-webkit-background-size: 18px;
-		background-size: 18px;
+	background-size: 18px;
 }
 
 .territory {
@@ -235,15 +239,20 @@
 	margin-top: 28px;
 }
 
+.territory .represent,
+.territory .service {
+	width: 39%;
+	margin-left: auto;
+	background: url("../i/icons/icons-16.svg") 0 .7em no-repeat;
+	background-size: 18px;
+}
+
 .territory .represent {
 	font-weight: 300;
 	padding-left: 40px;
 	padding-top: 10px;
 	font-size: 18px;
-	background: url('#{$img-dir}icons/icons-03.svg') no-repeat left;
 	margin-bottom: 20px;
-	-webkit-background-size: 24px;
-	background-size: 24px;
 	line-height: 130%;
 	position: relative;
 	z-index: 2;
@@ -255,19 +264,20 @@
 	padding-left: 40px;
 	padding-top: 10px;
 	font-size: 18px;
-	background: url('#{$img-dir}icons/icons-04.svg') no-repeat left;
-	-webkit-background-size: 24px;
-	background-size: 24px;
 	line-height: 130%;
 	position: relative;
 	z-index: 2;
 }
 
 .territory .map {
-	margin-top: -170px;
+	margin-top: -320px;
 	padding-bottom: 65px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #d7d7d7;
+}
+
+.territory .map img {
+	width: 100%;
 }
 
 .offices_territories {
@@ -300,7 +310,7 @@
 }
 
 .offices_territories .right ul{
-	column-count: 2;
+	column-count: 3;
 	column-gap: 160px;
 }
 
@@ -309,6 +319,7 @@
 	margin-top: 40px;
 	padding-left: 44px;
 	font-size: 18px;
+	counter-reset: ter-list;
 }
 
 .offices_territories ul li {
@@ -325,40 +336,24 @@
 	padding: 5px 0;
 }
 
-.offices_territories .right ul li:nth-child(1) {
-	background: url('#{$img-dir}icons/icons-09.svg') no-repeat left center;
-	-webkit-background-size: 25px;
-	background-size: 25px;
+.offices_territories .right ul li {
+	position: relative;
 }
 
-.offices_territories .right ul li:nth-child(2) {
-	background: url('#{$img-dir}icons/icons-12.svg') no-repeat left center;
-	-webkit-background-size: 25px;
-	background-size: 25px;
-}
-
-.offices_territories .right ul li:nth-child(3) {
-	background: url('#{$img-dir}icons/icons-10.svg') no-repeat left center;
-	-webkit-background-size: 25px;
-	background-size: 25px;
-}
-
-.offices_territories .right ul li:nth-child(4) {
-	background: url('#{$img-dir}icons/icons-13.svg') no-repeat left center;
-	-webkit-background-size: 25px;
-	background-size: 25px;
-}
-
-.offices_territories .right ul li:nth-child(5) {
-	background: url('#{$img-dir}icons/icons-11.svg') no-repeat left center;
-	-webkit-background-size: 25px;
-	background-size: 25px;
-}
-
-.offices_territories .right ul li:nth-child(6) {
-	background: url('#{$img-dir}icons/icons-14.svg') no-repeat left center;
-	-webkit-background-size: 25px;
-	background-size: 25px;
+.offices_territories .right ul li::before {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: .1em;
+	width: 22px;
+	font-size: 90%;
+	line-height: 22px;
+	text-align: center;
+	color: #399137;
+	counter-increment: ter-list;
+	content: counter(ter-list);
+	border: 1.5px solid #399137;
+	border-radius: 50%;
 }
 
 .partners {
@@ -366,68 +361,32 @@
 	padding-bottom: 170px;
 }
 
-.partners ul.logos li {
-	width: 25%;
-	float: left;
-	text-align: center;
-	position: relative;
-	padding-bottom: 18.4%;
-	border: 1px solid #dfdfdf;
-	margin-left: -1px;
-	margin-bottom: -1px;
-}
-
-.partners ul.logos li:first-child,
-.partners ul.logos li:nth-child(5) {
-	margin-left: 0;
-}
-
-.partners ul.logos li span {
-	position: absolute;
-	left: 0;
-	right: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-.partners ul.logos li span img {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.partners ul.logos li.last-child:hover {
-	background-color: #fafafa;
-}
-
-.partners ul.logos li:last-child img {
-	width: 70px;
-	top: 0;
-	transform: none;
-}
-
-.partners ul.logos li:last-child .cont {
-	position: relative;
-	display: block;
-	height: auto;
-}
-
-.partners ul.logos li:last-child a {
-	display: -webkit-flex;
-	display: -ms-flex;
+.partners ul.logos {
 	display: flex;
-	height: 100%;
-	-ms-align-items: center;
+	flex-wrap: wrap;
+}
+
+.partners ul.logos li {
+	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 33.3334%;
+	min-height: 150px;
+	border: {
+		width: 1px;
+		style: solid solid none none;
+		color: #959392;
+	}
 }
 
-.partners ul.logos li:last-child .cont span {
-	display: block;
-	margin-top: 25px;
-	position: static;
-	height: auto;
+.partners ul.logos li:nth-child(1),
+.partners ul.logos li:nth-child(2),
+.partners ul.logos li:nth-child(3) {
+	border-top: 0;
+}
+
+.partners ul.logos li:nth-child(3n+3) {
+	border-right: 0;
 }
 
 .offices_territories .right ul {
@@ -452,7 +411,8 @@
 	width: 75%;
 }
 
-form input.more {
+form input.more,
+a.more {
 	display: inline-block;
 	width: auto;
 	margin-top: 90px;
@@ -468,7 +428,8 @@ form input.more {
 	background:#00922a url('#{$img-dir}icons/arrow.png') no-repeat 90% center;
 }
 
-input.more:hover {
+input.more:hover,
+a.more:hover {
 	background:#0e9e37 url('#{$img-dir}icons/arrow.png') no-repeat 90% center;
 }
 
@@ -1391,29 +1352,13 @@ header .logo a img {
 		}
 
 		.offices_territories .right ul{
-			-webkit-column-count: 1;
-			column-count: 1;
-			-webkit-column-gap: 0;
-			column-gap: 0;
+			column-count: 2;
 		}
 
 		.offices_territories {
 			padding-left: 0;
 			justify-content: flex-start;
 			flex-wrap: wrap;
-		}
-
-		.partners ul.logos li a img {
-			max-width: 75%;
-		}
-
-		.partners ul.logos li:nth-child(6) a img,
-		.partners ul.logos li:nth-child(7) a img {
-			max-width: 50%;
-		}
-
-		.partners ul.logos li:nth-child(4) a img  {
-			max-width: 65%;
 		}
 }
 
@@ -1459,14 +1404,19 @@ header .logo a img {
 }
 
 @media only screen and (max-width: 800px) {
-		.territory .map {
-			margin-top: -70px;
-		}
+	.territory .represent,
+	.territory .service {
+		width: auto;
+	}
 
-		.desc {
-			width: 100%;
-			font-size: 26px;
-		}
+	.territory .map {
+		margin-top: -70px;
+	}
+
+	.desc {
+		width: 100%;
+		font-size: 26px;
+	}
 }
 
 @media only screen and (max-width: 735px) {
@@ -1484,6 +1434,11 @@ header .logo a img {
 }
 
 @media only screen and (max-width: 705px) {
+	.offices_territories .right ul{
+		column-count: 1;
+		column-gap: 0;
+	}
+
 	footer .copr {
 		display: block;
 		margin-bottom: 15px;
@@ -1491,16 +1446,6 @@ header .logo a img {
 
 	.siteMain .banner h2 {
 		left: 3%;
-	}
-}
-
-@media only screen and (max-width: 720px) {
-	.partners ul.logos li:last-child .cont span {
-		margin-top: 15px;
-	}
-
-	.partners ul.logos li:last-child img {
-		width: 50px;
 	}
 }
 
@@ -1521,11 +1466,6 @@ header .logo a img {
 	.partners {
 		padding-top: 50px;
 		padding-bottom: 50px;
-	}
-
-	.partners ul.logos li {
-		width: 50%;
-		padding-bottom: 29%;
 	}
 
 	.description .descList {
@@ -1590,14 +1530,6 @@ header .logo a img {
 
 	.territory .map {
 		margin-top: -30px;
-	}
-
-	.partners ul.logos li:last-child img {
-		width: 30px;
-	}
-
-	.partners ul.logos li:last-child .cont span {
-		font-size: 14px;
 	}
 }
 

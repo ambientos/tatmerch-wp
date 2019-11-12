@@ -124,6 +124,12 @@
   text-align: left;
   line-height: 160%; }
 
+.descList-wrap {
+  display: block; }
+
+.description .descList {
+  width: auto; }
+
 .description .descList li {
   background-size: 14px;
   padding-left: 25px;
@@ -178,12 +184,8 @@
 .offices_territories ul li {
   margin-bottom: 10px; }
 
-.offices_territories .right ul {
-  padding-left: 28px; }
-
 .offices_territories .right ul li {
-  background-size: 16px !important;
-  padding-left: 24px; }
+  padding-left: 35px; }
 
 .offices_territories ul {
   margin-top: 20px; }
@@ -192,6 +194,7 @@
   padding-bottom: 20px; }
 
 .partners ul.logos li {
+  min-height: 80px;
   border: none; }
 
 .partners ul.logos li span img {
