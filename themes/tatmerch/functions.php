@@ -137,13 +137,6 @@ add_filter('wp_check_filetype_and_ext', 'tatm_allow_upload_svg', 10, 4);
 
 
 /**
- * ACF
- */
-
-require 'acf/init.php';
-
-
-/**
  * Template functions
  */
 
@@ -155,10 +148,3 @@ require 'inc/template-functions.php';
  */
 
 require 'inc/customizer.php';
-
-
-/**
- * Shortcodes
- */
-
-require 'inc/shortcodes.php';
