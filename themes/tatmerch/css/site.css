@@ -956,9 +956,6 @@ section.otchet img {
   right: 0;
   top: 65px; }
 
-section.otchet img.hd {
-  display: none; }
-
 .otchet .left {
   /*width: 50%;*/
   width: 45%; }
