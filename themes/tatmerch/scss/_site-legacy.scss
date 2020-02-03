@@ -141,7 +141,7 @@
 .siteMain .banner {
 	max-height: 600px;
 	overflow: hidden;
-	margin-top: 80px;
+	margin-top: 39px;
 	position: relative;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .description {
-	padding-bottom: 90px;
+	padding-bottom: 45px;
 	background: url('#{$img-dir}circle.png') no-repeat;
 	background-position: 83% 125%;
 }
@@ -220,14 +220,14 @@
 }
 
 .territory {
-	padding: 100px 0;
+	padding: 50px 0 25px;
 	background-color: #fafafa;
 }
 
 .sectionTitle {
 	font-weight: 500;
 	font-size: 30px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .sectionTitle:after {
@@ -270,8 +270,8 @@
 }
 
 .territory .map {
-	margin-top: -320px;
-	padding-bottom: 65px;
+	margin-top: -250px;
+	padding-bottom: 30px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #d7d7d7;
 }
@@ -357,8 +357,7 @@
 }
 
 .partners {
-	padding-top: 130px;
-	padding-bottom: 170px;
+	padding: 30px 0;
 }
 
 .partners ul.logos {
@@ -395,12 +394,12 @@
 
 .services {
 	background-color: #fafafa;
-	padding-top: 100px;
+	padding-top: 30px;
 
 }
 
 .services .container {
-	padding-bottom: 140px;
+	padding-bottom: 60px;
 	background: url('#{$img-dir}icons/cir.png') no-repeat 90% 140%;
 }
 
@@ -482,7 +481,6 @@ footer .devBy a {
 	font-size: 36px;
 	font-weight: 300;
 	padding: 70px 0;
-	margin-top: 75px;
 	background: url('#{$img-dir}icons/chat.svg') no-repeat right 80%;
 	-webkit-background-size: 195px auto;
 	background-size: 195px auto;
@@ -538,7 +536,7 @@ div.organ_input {
 }
 
 .contacts .form form{
-	margin-top: 120px;
+	margin-top: 45px;
 }
 
 .form textarea,
@@ -560,8 +558,8 @@ div.organ_input {
 
 form > div input {
 	width: 100%;
-	padding-bottom: 30px;
-	margin-bottom: 80px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
 	font-family: "Roboto",sans-serif;
 	font-weight: 300;
 	font-size: 18px;
@@ -572,17 +570,18 @@ form > div input {
 }
 
 .contacts .more {
-	margin-bottom: 170px;
+	margin: 50px 0;
 }
 
 main.vacancy {
-	margin-top: 115px;
+	margin-top: 70px;
 }
 
 .subSection {
+	margin-top: 30px;
 	font-size: 30px;
 	font-weight: 300;
-	margin-bottom: 90px;
+	margin-bottom: 30px;
 }
 
 main.vacancy .row {
@@ -634,7 +633,7 @@ ul.greendot_list li:last-child {
 
 .wrapper.nobgc {
 	background: none;
-	padding-top: 95px;
+	padding-top: 0;
 	padding-bottom: 0;
 }
 
@@ -689,7 +688,11 @@ p.demo {
 
 main.crm, main.merch {
 	margin-top: 80px;
-	padding-top: 40px;
+	padding-top: 39px;
+}
+
+main.crm {
+	margin-top: 39px;
 }
 
 .crm h3 {
@@ -703,7 +706,7 @@ main.crm, main.merch {
 	line-height: 150%;
 	font-weight: 300;
 	font-size: 24px;
-	margin-top: 140px;
+	margin-top: 50px;
 	border-bottom: 1px solid #00922A;
 	padding-bottom: 60px;
 }
@@ -717,10 +720,6 @@ main.crm, main.merch {
 	float: right;
 }
 
-.crm .right img {
-	margin-top: 60px;
-}
-
 .row_laptop {
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -728,7 +727,7 @@ main.crm, main.merch {
 	width: 100%;
 	-ms-align-items: center;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .row_laptop .laptop {
@@ -750,7 +749,7 @@ main.crm, main.merch {
 }
 
 .row.advantages {
-	margin-top: 170px;
+	margin-top: 70px;
 }
 
 .sectionTitle.green {
@@ -790,7 +789,7 @@ main.crm, main.merch {
 .row.advantages .row .nimg {
 	padding: 35px 150px 45px 40px;
 	background-color: #fafafa;
-	min-height: 333px;
+	min-height: 260px;
 }
 
 .row.advantages .row .nimg img {
@@ -831,7 +830,7 @@ main.crm, main.merch {
 }
 
 .sectionTitle.green {
-	margin-top: 130px;
+	margin-top: 60px;
 }
 
 .nimg img {
@@ -854,7 +853,7 @@ main.crm, main.merch {
 }
 
 .greenbox {
-	margin: 85px 0;
+	margin: 35px 0;
 	max-width: 1020px;
 	border: 1px solid #00922a;
 	border-radius: 10px;
@@ -890,7 +889,7 @@ main.crm, main.merch {
 }
 
 .contacts .container {
-	background: url('#{$img-dir}icons/cir.png') no-repeat 85% 105%;
+	background: url('#{$img-dir}icons/cir.png') no-repeat 85% 130%;
 }
 
 section.contacts.crm {
@@ -951,7 +950,7 @@ section.contacts.crm textarea
 }
 
 .mt130 {
-	margin-top: 130px;
+	margin-top: 50px;
 }
 
 .merch h3 {
@@ -959,7 +958,7 @@ section.contacts.crm textarea
 	display: block;
 	font-weight: 300;
 	max-width: none;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 .maw380 {
@@ -979,8 +978,8 @@ section.contacts.crm textarea
 section.otchet {
 	position: relative;
 	background-color: #fafafa;
-	padding-top: 100px;
-	padding-bottom: 140px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 section.otchet img {
@@ -1020,9 +1019,11 @@ section.otchet img {
 .merch .green_circle {
 	position: relative;
 	text-align: right;
+	height: 30px;
 }
 
 .merch .green_circle img {
+	display: none;
 	position: relative;
 	top: 95px;
 	margin-top: -45px;
@@ -1030,7 +1031,7 @@ section.otchet img {
 }
 
 .zapusk {
-	padding-top: 125px;
+	padding-top: 50px;
 }
 
 .zapusk .icon {
@@ -1104,7 +1105,7 @@ main.crm.merch {
 }
 
 main.crm.merch.mt80 {
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .modal {

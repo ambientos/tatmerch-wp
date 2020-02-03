@@ -43,7 +43,7 @@ function tatm_scripts_styles() {
 	 * Styles
 	 */
 	
-	wp_enqueue_style( 'tatm-site', get_template_directory_uri() . '/css/site.css', array(), '20191102' );
+	wp_enqueue_style( 'tatm-site', get_template_directory_uri() . '/css/site.css', array(), '20200203' );
 	wp_enqueue_style( 'tatm-site-mobile', get_template_directory_uri() . '/css/site-mobile.css', array(), '20191102', 'screen and (min-width: 320px) and (max-width: 480px)' );
 
 	/*
